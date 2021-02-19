@@ -193,7 +193,7 @@ module FFI
       end
 
 
-      def try_library(libname, options = {})
+      ruby2_keywords def try_library(libname, options = {})
         func = options[:function] || 'main'
         paths = options[:paths] || ''
         main = <<-C_FILE
